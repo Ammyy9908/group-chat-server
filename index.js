@@ -18,6 +18,8 @@ app.use(cors());
 app.use(express.json());
 app.use("/api", auth_route);
 app.use("/roomapi", room_route);
+app.get('/',(res,res)=>{
+res.send("api working});
 
 // database connection
 connectDb()
